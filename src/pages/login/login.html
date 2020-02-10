@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://unpkg.com/@accera/solar-components.core/dist/solar/solar.css"/>
+    <script src="https://unpkg.com/@accera/solar-components.core/dist/solar.js"></script>
+    <style>
+        ac-login:not(.hydrated) {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+<ac-login background-image-src="/assets/images/bg-login.png">
+    <form id="loginForm" slot="content">
+        <h1 class="mb-3 pt-5">Login</h1>
+        <ac-input
+            id="userInput"
+            name="username"
+            class="mb-2"
+            label="E-mail"
+        ></ac-input>
+
+        <ac-input
+            id="passwordInput"
+            type="password"
+            name="password"
+            class="mb-2"
+            label="Senha"
+        ></ac-input>
+        <div class="d-flex flex-wrap justify-content-end mb-3 align-items-center">
+            <ac-button theme="primary" fill="solid" type="submit">
+                Entrar
+            </ac-button>
+        </div>
+        <div>
+            <ac-button theme="primary" fill="clear" id="forgotPasswordButton">
+                Esqueci minha senha
+            </ac-button>
+        </div>
+    </form>
+    <div slot="footer">
+        <small class="text-neutral-dark">© <span id="yearText"></span> Neogrid</small>
+    </div>
+</ac-login>
+</body>
+<script src="login.js"></script>
+<script>
+    new LoginController();
+</script>
+</html>
