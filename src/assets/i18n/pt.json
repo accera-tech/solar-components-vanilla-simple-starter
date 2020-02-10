@@ -1,0 +1,18 @@
+{
+  "login": {
+    "title": "Faça seu login",
+    "email": "E-mail",
+    "password": "Senha",
+    "rememberMe": "Manter conectado",
+    "submit": "Entrar",
+    "passwordRecovery": "Esqueceu sua senha?"
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "helpText": "Dúvidas? Acesse a página Politica de Privacidade",
+    "helpLink": "aqui",
+    "agreeLabel": "Confirmo estar de acordo com a <b>política de privacidade</b> para ter acesso liberado no Portal Neogrid.",
+    "declineButton": "Negar",
+    "acceptButton": "Aceitar"
+  }
+}

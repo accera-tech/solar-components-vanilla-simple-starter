@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="https://unpkg.com/@accera/solar-components.core/dist/solar/solar.css"/>
     <script src="https://unpkg.com/@accera/solar-components.core/dist/solar.js"></script>
     <style>
-        ac-login:not(.hydrated) {
+        ac-login:not(.hydrated), #api {
             visibility: hidden;
         }
     </style>
 </head>
 <body>
+
+
 <ac-login background-image-src="/assets/images/bg-login.png">
     <form id="loginForm" slot="content">
         <h1 class="mb-3 pt-5">Login</h1>
@@ -45,7 +47,10 @@
         <small class="text-neutral-dark">© <span id="yearText"></span> Neogrid</small>
     </div>
 </ac-login>
+<div id="api"></div>
+
 </body>
+<script src="/shared/i18n.js"></script>
 <script src="login.js"></script>
 <script>
     new LoginController();
